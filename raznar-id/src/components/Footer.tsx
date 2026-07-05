@@ -1,0 +1,197 @@
+export default function Footer() {
+  return (
+    <footer className="bg-violet-700 mt-auto h-fit">
+      <div className="md:pt-[60px] pb-[20px] scale-[.85]">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row md:gap-x-6">
+            <div className="flex flex-col mb-[40px] text-white">
+              <h3 className="mb-[10px] mx-auto md:mx-0" aria-label="Raznar Logo">
+                <a href="/">
+                  <span className="sr-only">Raznar Home</span>
+                  <img src="/icons/banner.avif" alt="Raznar Logo" draggable="false" className="h-16" loading="lazy" />
+                </a>
+              </h3>
+              <p className="text-lg max-w-md hidden md:block">
+                Raznar adalah penyedia solusi digital mencakup Cloud Server, Game Hosting, VPS, pengadaan IT, dan software custom. Kami hadir dengan performa tinggi dan dukungan andal untuk mendukung pertumbuhan digital Anda.
+              </p>
+              <ul className="flex justify-center gap-x-3 md:justify-start md:pt-6">
+                <li title="WhatsApp" className="bg-white/10 rounded-full px-[12px] py-[12px] hover:bg-white/20 hover:no-underline">
+                  <a href="https://api.whatsapp.com/send?phone=6283173845395&text=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Raznar.%20" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                    <svg width="1em" height="1em" className="w-5 h-5 text-white" aria-hidden="true" data-icon="ion:logo-whatsapp">
+                      <symbol id="ai:ion:logo-whatsapp" viewBox="0 0 512 512"><path fill="currentColor" fillRule="evenodd" d="M414.73 97.1A222.14 222.14 0 0 0 256.94 32C134 32 33.92 131.58 33.87 254a220.6 220.6 0 0 0 29.78 111L32 480l118.25-30.87a223.6 223.6 0 0 0 106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 0 0 414.73 97.1M256.94 438.66h-.08a185.75 185.75 0 0 1-94.36-25.72l-6.77-4l-70.17 18.32l18.73-68.09l-4.41-7A183.46 183.46 0 0 1 71.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 0 1 185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52m101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78s-14.4 18-17.65 21.75s-6.5 4.16-12.07 1.38s-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26s.93-6.94-.46-9.71s-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52c-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 0 0-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38s39.3 59.73 95.21 83.76a323 323 0 0 0 31.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2c10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37s-5.11-3.71-10.69-6.48"/></symbol><use href="#ai:ion:logo-whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li title="Discord" className="bg-white/10 rounded-full px-[12px] py-[12px] hover:bg-white/20 hover:no-underline">
+                  <a href="/discord" aria-label="Discord">
+                    <svg width="1em" height="1em" className="w-5 h-5 text-white" aria-hidden="true" data-icon="ion:logo-discord">
+                      <symbol id="ai:ion:logo-discord" viewBox="0 0 512 512"><path fill="currentColor" d="M464 66.52A50 50 0 0 0 414.12 17L97.64 16A49.65 49.65 0 0 0 48 65.52V392c0 27.3 22.28 48 49.64 48H368l-13-44l109 100ZM324.65 329.81s-8.72-10.39-16-19.32C340.39 301.55 352.5 282 352.5 282a139 139 0 0 1-27.85 14.25a173.3 173.3 0 0 1-35.11 10.39a170 170 0 0 1-62.72-.24a184.5 184.5 0 0 1-35.59-10.4a141.5 141.5 0 0 1-17.68-8.21c-.73-.48-1.45-.72-2.18-1.21c-.49-.24-.73-.48-1-.48c-4.36-2.42-6.78-4.11-6.78-4.11s11.62 19.09 42.38 28.26c-7.27 9.18-16.23 19.81-16.23 19.81c-53.51-1.69-73.85-36.47-73.85-36.47c0-77.06 34.87-139.62 34.87-139.62c34.87-25.85 67.8-25.12 67.8-25.12l2.42 2.9c-43.59 12.32-63.44 31.4-63.44 31.4s5.32-2.9 14.28-6.77c25.91-11.35 46.5-14.25 55-15.21a24 24 0 0 1 4.12-.49a205.6 205.6 0 0 1 48.91-.48a201.6 201.6 0 0 1 72.89 22.95s-19.13-18.15-60.3-30.45l3.39-3.86s33.17-.73 67.81 25.16c0 0 34.87 62.56 34.87 139.62c0-.28-20.35 34.5-73.86 36.19"/><path fill="currentColor" d="M212.05 218c-13.8 0-24.7 11.84-24.7 26.57s11.14 26.57 24.7 26.57c13.8 0 24.7-11.83 24.7-26.57c.25-14.76-10.9-26.57-24.7-26.57m88.38 0c-13.8 0-24.7 11.84-24.7 26.57s11.14 26.57 24.7 26.57c13.81 0 24.7-11.83 24.7-26.57S314 218 300.43 218"/></symbol><use href="#ai:ion:logo-discord"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li title="TikTok" className="bg-white/10 rounded-full px-[12px] py-[12px] hover:bg-white/20 hover:no-underline">
+                  <a href="https://www.tiktok.com/@raznar.hosting" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                    <svg width="1em" height="1em" className="w-5 h-5 text-white" aria-hidden="true" data-icon="ion:logo-tiktok">
+                      <symbol id="ai:ion:logo-tiktok" viewBox="0 0 512 512"><path fill="currentColor" d="M412.19 118.66a109 109 0 0 1-9.45-5.5a133 133 0 0 1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69c0 .52-.05 1-.08 1.56c0 .23 0 .47-.05.71v.18a70 70 0 0 1-35.22 55.56a68.8 68.8 0 0 1-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0 1 21.41 3.39l.1-83.94a153.14 153.14 0 0 0-118 34.52a161.8 161.8 0 0 0-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24c-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.5 167.5 0 0 0 115 470.66v-.2l.2.2c39.91 27.12 84.16 25.34 84.16 25.34c7.66-.31 33.32 0 62.46-13.81c32.32-15.31 50.72-38.12 50.72-38.12a158.5 158.5 0 0 0 27.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-10.14 1.1-30.73-2.1-51.81-12.61"/></symbol><use href="#ai:ion:logo-tiktok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li title="Instagram" className="bg-white/10 rounded-full px-[12px] py-[12px] hover:bg-white/20 hover:no-underline">
+                  <a href="https://www.instagram.com/raznar.hosting" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <svg width="1em" height="1em" className="w-5 h-5 text-white" aria-hidden="true" data-icon="ion:logo-instagram">
+                      <symbol id="ai:ion:logo-instagram" viewBox="0 0 512 512"><path fill="currentColor" d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34zm0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32"/><path fill="currentColor" d="M377.33 162.67a28 28 0 1 1 28-28a27.94 27.94 0 0 1-28 28M256 181.33A74.67 74.67 0 1 1 181.33 256A74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112a112 112 0 0 0-112-112"/></symbol><use href="#ai:ion:logo-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col md:flex-row md:w-3/5 md:ml-auto md:grid md:grid-cols-3 md:gap-x-6 md:pt-2.5">
+              <div className="footer-links mb-[15px]">
+                <h4 className="text-white text-xl font-bold mb-4">Produk &amp; Layanan</h4>
+                <ul className="text-slate-100">
+                  <li className="pb-4">
+                    <a href="/consult" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2">
+                      <span>Konsultasi</span>
+                    </a>
+                  </li>
+                  <li className="pb-4">
+                    <a href="/game-hosting" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2">
+                      <span>Game Hosting</span>
+                    </a>
+                  </li>
+                  <li className="pb-4">
+                    <a href="/virtual-private-server" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2">
+                      <span>Virtual Private Server</span>
+                    </a>
+                  </li>
+                  <li className="pb-4">
+                    <a href="/app-hosting" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2">
+                      <span>Hosting Aplikasi</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-links mb-[15px]">
+                <h4 className="text-white text-xl font-bold mb-4">Media Sosial</h4>
+                <ul className="text-slate-100">
+                  <li className="pb-4">
+                    <a href="https://api.whatsapp.com/send?phone=6283173845395&text=Halo%20kak%2C%20saya%20mau%20bertanya" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2" target="_blank" rel="noopener noreferrer">
+                      <svg width="1em" height="1em" viewBox="0 0 512 512" className="w-5 h-5 text-white" aria-hidden="true" data-icon="ion:logo-whatsapp">
+                        <use href="#ai:ion:logo-whatsapp"></use>
+                      </svg>
+                      <span>WhatsApp</span>
+                    </a>
+                  </li>
+                  <li className="pb-4">
+                    <a href="/discord" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2">
+                      <svg width="1em" height="1em" viewBox="0 0 512 512" className="w-5 h-5 text-white" aria-hidden="true" data-icon="ion:logo-discord">
+                        <use href="#ai:ion:logo-discord"></use>
+                      </svg>
+                      <span>Discord</span>
+                    </a>
+                  </li>
+                  <li className="pb-4">
+                    <a href="https://www.tiktok.com/@raznar.hosting" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2" target="_blank" rel="noopener noreferrer">
+                      <svg width="1em" height="1em" viewBox="0 0 512 512" className="w-5 h-5 text-white" aria-hidden="true" data-icon="ion:logo-tiktok">
+                        <use href="#ai:ion:logo-tiktok"></use>
+                      </svg>
+                      <span>TikTok</span>
+                    </a>
+                  </li>
+                  <li className="pb-4">
+                    <a href="https://www.instagram.com/raznar.hosting" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2" target="_blank" rel="noopener noreferrer">
+                      <svg width="1em" height="1em" viewBox="0 0 512 512" className="w-5 h-5 text-white" aria-hidden="true" data-icon="ion:logo-instagram">
+                        <use href="#ai:ion:logo-instagram"></use>
+                      </svg>
+                      <span>Instagram</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-links mb-[15px]">
+                <h4 className="text-white text-xl font-bold mb-4">Legalitas</h4>
+                <ul className="text-slate-100">
+                  <li className="pb-4">
+                    <a href="/terms" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2">
+                      <span>Syarat &amp; Ketentuan</span>
+                    </a>
+                  </li>
+                  <li className="pb-4">
+                    <a href="/privacy-policy" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2">
+                      <span>Kebijakan Privasi</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-links mb-[15px]">
+                <h4 className="text-white text-xl font-bold mb-4">Support</h4>
+                <ul className="text-slate-100">
+                  <li className="pb-4">
+                    <a href="https://status.raznar.id/" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2" target="_blank" rel="noopener noreferrer">
+                      <span>Status Layanan</span>
+                      <svg width="1em" height="1em" className="w-4 h-4 opacity-70" aria-hidden="true" data-icon="fa6-solid:arrow-up-right-from-square">
+                        <symbol id="ai:fa6-solid:arrow-up-right-from-square" viewBox="0 0 512 512"><path fill="currentColor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32z"/></symbol><use href="#ai:fa6-solid:arrow-up-right-from-square"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li className="pb-4">
+                    <a href="https://docs.raznar.id" className="flex items-center transition-colors hover:text-white hover:underline underline-offset-4 font-normal text-lg gap-x-2" target="_blank" rel="noopener noreferrer">
+                      <span>Panduan Pengguna</span>
+                      <svg width="1em" height="1em" viewBox="0 0 512 512" className="w-4 h-4 opacity-70" aria-hidden="true" data-icon="fa6-solid:arrow-up-right-from-square">
+                        <use href="#ai:fa6-solid:arrow-up-right-from-square"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto border-t-2 border-violet-200/40 scale-[.85]">
+        <div className="flex flex-col md:flex-row justify-between py-6">
+          <div className="text-center text-sm md:text-left text-white mb-4 md:mb-0 md:text-base">
+            <div>
+              © <b>2020 - 2026 Raznar. All Rights Reserved.</b>
+            </div>
+          </div>
+          <ul className="flex flex-wrap justify-center md:grid md:grid-cols-6 gap-x-5 gap-y-5 md:w-3/5">
+            <li className="bg-white/40 border-[1.5px] border-slate-900 hover:no-underline p-1.5 flex justify-center">
+              <img alt="qris" src="/icons/payments/qris.avif" className="h-4 md:h-6" loading="lazy" />
+            </li>
+            <li className="bg-white/40 border-[1.5px] border-slate-900 hover:no-underline p-1.5 flex justify-center">
+              <img alt="indomaret" src="/icons/payments/indomaret.avif" className="h-4 md:h-6" loading="lazy" />
+            </li>
+            <li className="bg-white/40 border-[1.5px] border-slate-900 hover:no-underline p-1.5 flex justify-center">
+              <img alt="paypal" src="/icons/payments/paypal.avif" className="h-4 md:h-6" loading="lazy" />
+            </li>
+            <li className="bg-white/40 border-[1.5px] border-slate-900 hover:no-underline p-1.5 flex justify-center">
+              <img alt="bank_bjb" src="/icons/payments/bank_bjb.avif" className="h-4 md:h-6" loading="lazy" />
+            </li>
+            <li className="bg-white/40 border-[1.5px] border-slate-900 hover:no-underline p-1.5 flex justify-center">
+              <img alt="bank_bni" src="/icons/payments/bank_bni.avif" className="h-4 md:h-6" loading="lazy" />
+            </li>
+            <li className="bg-white/40 border-[1.5px] border-slate-900 hover:no-underline p-1.5 flex justify-center">
+              <img alt="bank_bri" src="/icons/payments/bank_bri.avif" className="h-4 md:h-6" loading="lazy" />
+            </li>
+            <li className="bg-white/40 border-[1.5px] border-slate-900 hover:no-underline p-1.5 flex justify-center">
+              <img alt="bank_mandiri" src="/icons/payments/bank_mandiri.avif" className="h-4 md:h-6" loading="lazy" />
+            </li>
+            <li className="bg-white/40 border-[1.5px] border-slate-900 hover:no-underline p-1.5 flex justify-center">
+              <img alt="bank_permata" src="/icons/payments/bank_permata.avif" className="h-4 md:h-6" loading="lazy" />
+            </li>
+            <li className="bg-white/40 border-[1.5px] border-slate-900 hover:no-underline p-1.5 flex justify-center">
+              <img alt="bank_bss" src="/icons/payments/bank_bss.avif" className="h-4 md:h-6" loading="lazy" />
+            </li>
+            <li className="bg-white/40 border-[1.5px] border-slate-900 hover:no-underline p-1.5 flex justify-center">
+              <img alt="bank_bsi" src="/icons/payments/bank_bsi.avif" className="h-4 md:h-6" loading="lazy" />
+            </li>
+            <li className="bg-white/40 border-[1.5px] border-slate-900 hover:no-underline p-1.5 flex justify-center">
+              <img alt="bank_cimb" src="/icons/payments/bank_cimb.avif" className="h-4 md:h-6" loading="lazy" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
+}

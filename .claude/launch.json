@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "raznar-id-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "raznar-id",
+        "run",
+        "dev"
+      ],
+      "port": 3000
+    }
+  ]
+}
