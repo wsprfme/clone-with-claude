@@ -11,6 +11,7 @@ A Claude Code skill that reverse-engineers websites into pixel-accurate, indepen
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38BDF8?logo=tailwindcss&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
 ![Built with](https://img.shields.io/badge/built%20with-Claude%20Code-D97757)
+![License](https://img.shields.io/badge/license-MIT-yellow)
 ![Last commit](https://img.shields.io/github/last-commit/wsprfme/clone-with-claude)
 ![Repo size](https://img.shields.io/github/repo-size/wsprfme/clone-with-claude)
 
@@ -28,6 +29,7 @@ A Claude Code skill that reverse-engineers websites into pixel-accurate, indepen
 - [Recommended setup](#recommended-setup)
 - [Managing token usage](#managing-token-usage)
 - [Author](#author)
+- [License](#license)
 
 ---
 
@@ -150,3 +152,9 @@ None of this changes what gets extracted or how faithfully it's rebuilt — it o
 ## Author
 
 Built and maintained by **[wsprfme](https://github.com/wsprfme)**, using Claude Code as the implementation engine for the skill, tooling, and extraction pipeline described above.
+
+---
+
+## License
+
+[MIT](LICENSE) © 2026 wsprfme. The base Next.js/shadcn/Tailwind scaffold (`.claude/templates/nextjs-base/`) is derived from [ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) by JCodesMore, also MIT-licensed.
