@@ -115,7 +115,28 @@ Claude Code's built-in tools don't cover a few mechanical, error-prone steps. Th
 
 ## Usage
 
-1. **Prerequisites:** Node.js ≥24, Claude Code Desktop with Chrome browser tooling (`claude-in-chrome`) connected.
+1. **Prerequisites:** Node.js ≥24, Claude Code Desktop with Chrome browser tooling (`claude-in-chrome`) connected — see setup steps below if you haven't done this yet.
+
+<details>
+<summary><strong>One-time setup: connecting Claude in Chrome</strong> (click to expand)</summary>
+
+This skill can't inspect target sites without it — the browser tool is what lets Claude actually look at the live page, not just guess from a static fetch.
+
+1. Install the **Claude for Chrome** extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn) (works on Chrome and Edge — Brave, Arc, and other Chromium forks aren't supported yet).
+2. You need a direct Anthropic plan (Pro / Max / Team / Enterprise) — API-key-only setups don't currently support this integration.
+3. Requires **Claude Code 2.0.73+** and **extension 1.0.36+**. Update both if the connection fails.
+4. Connect it one of two ways:
+   - **From Claude Code Desktop:** open Settings → Connectors → Claude in Chrome, and enable it.
+   - **From a terminal session:** start with `claude --chrome`, or run `/chrome` inside an existing session and select "Enabled by default" so you don't have to pass the flag every time.
+5. Restart Chrome after first install — the native messaging host it installs needs a fresh browser process to initialize.
+6. If it won't connect: sign out of Claude completely, clear the browser cache, and sign back in with your email instead of Google OAuth — this fixes most stuck connections.
+
+Not supported: WSL (Windows Subsystem for Linux) — the native messaging path can't reach the extension from there. Launch from native Windows instead.
+
+Sources: [Claude Code Chrome docs](https://code.claude.com/docs/en/chrome), [Get started with Claude in Chrome](https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome)
+
+</details>
+
 2. Open this repo in Claude Code Desktop.
 3. Run:
    ```
